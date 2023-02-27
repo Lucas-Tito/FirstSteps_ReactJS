@@ -1,9 +1,59 @@
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
 *{
-    margin: 10px;
-    
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Futura PT,Trebuchet MS,Arial,sans-serif; 
+}
+
+#root{
+    min-height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
 }
 
 .logo{
     /* margin: 10px 0 20px; */
     width: 40px;
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 20px;
+    color: white;
+}
+
+.UnorderedList{
+    margin: 20px;
+}
+
+footer{
+    /* 
+        * for the footer to stay at bottom, you will need to change settings on body
+        * or in this case, change settings on #root 
+    */
+    margin-top: auto;
+    height: auto;
+    margin-bottom: 0px;
+    background: rgb(18, 18, 18);
+    color: #edf0f1;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.footerContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
