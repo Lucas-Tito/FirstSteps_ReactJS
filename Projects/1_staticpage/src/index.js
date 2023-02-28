@@ -6,7 +6,7 @@ import UnorderedList from "./components/UnorderedList"
 import Footer from "./components/Footer"
 
 
-function FullPage(){
+function App(){
     return(
     <>
         <Header/>
@@ -16,4 +16,4 @@ function FullPage(){
     )
 }
 
-ReactDOM.createRoot(document.querySelector("#root")).render(<FullPage/>)
+ReactDOM.createRoot(document.querySelector("#root")).render(<App/>)

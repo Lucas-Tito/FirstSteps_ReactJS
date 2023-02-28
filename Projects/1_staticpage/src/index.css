@@ -47,8 +47,22 @@ header .nav_links li{
 }
 
 .UnorderedList{
-    margin: 20px;
+    margin: 40px;
     color: #edf0f1;
+}
+
+.UnorderedList h1{
+    margin-bottom: 20px;
+}
+
+.UnorderedList ul{
+    list-style: none;
+    font-size: 1.1em;
+}
+
+.UnorderedList ul li::before{
+    content: "• ";
+    color: #53C1DE; 
 }
 
 footer{
