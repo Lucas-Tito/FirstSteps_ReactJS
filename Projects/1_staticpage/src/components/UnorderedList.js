@@ -1,3 +1,5 @@
+import reactIconLarge from "../images/react-icon-large.png"
+
 export default function UnorderedList(){
     return(
         <div className="UnorderedList">
@@ -8,6 +10,7 @@ export default function UnorderedList(){
                 <li>React is declarative</li>
                 <li>React code looks clean and fresh!</li>
             </ul>
+            <img className="background_logo" src={reactIconLarge}/>
         </div>
     )
 }
