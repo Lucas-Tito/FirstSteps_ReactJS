@@ -9,7 +9,13 @@ function Header(){
             <img className="logo" src={require("./images/react.svg").default}/> 
             <span>ReactFacts</span>
         </div>
-        <nav></nav>
+        <nav>
+            <ul className="nav_links">
+                <li>Pricing</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
     </header>
     )
 }
@@ -33,16 +39,21 @@ function Footer(){
         <footer>
             <div className="footerContent">
                 <p className="message">God bless those in need</p>
-                <p>Copyright &copy; 2023<span> Lucas Tito </span>development. All rights reserved.</p>
+                <p>&copy; 2023<span> Lucas Tito </span>development. All rights reserved.</p>
             </div>
         </footer>
     )
 }
 
-ReactDOM.createRoot(document.querySelector("#root")).render(
+
+function FullPage(){
+    return(
     <>
         <Header/>
         <UnorderedList/>
         <Footer/>
     </>
-)
+    )
+}
+
+ReactDOM.createRoot(document.querySelector("#root")).render(<FullPage/>)

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: Futura PT,Trebuchet MS,Arial,sans-serif; 
+    text-decoration: none;
 }
 
 #root{
@@ -11,29 +12,43 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column; 
+    background-color: rgb(32, 31, 32);
 }
 
 .logo{
     /* margin: 10px 0 20px; */
-    width: 40px;
+    width: 60px;
+    margin-right: 2px;
 }
 
 .logoContainer{
     display: flex;
     align-items: center;
+    font-size: 1.5em;
+    color: #53C1DE;
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: rgb(14, 13, 14);
     padding: 20px 20px;
     color: white;
 }
 
+header .nav_links{
+    list-style: none;
+}
+
+header .nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
 .UnorderedList{
     margin: 20px;
+    color: #edf0f1;
 }
 
 footer{
@@ -44,10 +59,23 @@ footer{
     margin-top: auto;
     height: auto;
     margin-bottom: 0px;
-    background: rgb(18, 18, 18);
-    color: #edf0f1;
+    background: rgb(15, 15, 15);
+    color: #dfdfdf;
     width: 100%;
     padding-top: 10px;
+}
+
+footer p{
+    font-size: 1em;
+}
+
+footer span{
+    color: #3e8ba0;
+}
+
+footer .message{
+    font-size: 0.7em;
+    color: rgb(82, 94, 109);
 }
 
 .footerContent{
