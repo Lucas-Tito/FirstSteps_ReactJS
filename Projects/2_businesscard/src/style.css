@@ -73,6 +73,8 @@
     justify-content: center;
     width: 115px;
     padding: 7px 11px 7px 9px;
+    border: none;
+    border-radius: 6px;
 }
 
 .contact_btns img{
@@ -87,4 +89,11 @@
 
 .contact_btns #email{
     margin-right: 15px;
+    color: #374151;
+}
+
+.contact_btns #linkedin{
+    color: white;
+    margin-right: 15px;
+    background-color: #5093E2;
 }
