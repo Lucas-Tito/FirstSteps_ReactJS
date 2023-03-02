@@ -16,6 +16,18 @@ header{
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-header .logo_container{
+header .logo_container img{
     padding: 30px 22px;
+}
+ 
+.hero_container{
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_container img{
+    width: 395.91px;
 }
