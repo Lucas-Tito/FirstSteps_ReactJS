@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#root{
+    min-height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    background-color: white;
+}
+
+header{
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+header .logo_container{
+    padding: 30px 22px;
+}
