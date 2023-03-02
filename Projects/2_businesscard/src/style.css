@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Inter', sans-serif;
+    text-decoration: none;
 }
 
 #root{
@@ -65,6 +66,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    
 }
 
 .contact_btns button{
@@ -83,7 +85,7 @@
     margin-right: 8px;
 }
 
-.contact_btns #linkedin_icon{
+.contact_btns #linkedin_btn_icon{
     width: 21px;
 }
 
