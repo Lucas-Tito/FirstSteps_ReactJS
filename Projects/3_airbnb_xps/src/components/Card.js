@@ -9,12 +9,12 @@ export default function Card(){
             <div className="description_container">
                 <div className="rating">
                     <img src={rating_star}/>
-                    <span>(6)•USA</span>
+                    <span id="score">5.0 </span>
+                    <span id="secondary_rating">(6)•USA</span>
                 </div>
                 <p className="description">Life lessons with Katie Zaferes</p>
                 <div className="pricing_container">
-                    <span className="before/">From $136/ </span>
-                    <span className="after/">person</span>
+                    <span className="pricing"><b>From $136/</b> person</span>
                 </div>
             </div>
         </div>
