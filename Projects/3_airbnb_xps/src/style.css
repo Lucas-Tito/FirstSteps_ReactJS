@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;600&display=swap');
+
 *{
     margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none; 
+    font-family: 'Poppins', sans-serif;
 }
 
 #root{
@@ -30,4 +33,40 @@ header .logo_container img{
 
 .hero_container img{
     width: 395.91px;
+}
+
+.hero_container .text_container{
+    align-self: flex-start;
+    margin: 32px 0 0 36px;
+}
+
+.hero_container .text_container h1{
+    font-size: 2.25em;
+}
+
+.hero_container .text_container p{
+    font-size: 1em;
+    font-weight: 300;
+    color:#222222;
+    margin-top: 16px;
+    max-width: 35ch;
+    line-height: 17.6px;
+}
+
+
+.card_container{
+    margin: 49px 0 0 37px;
+}
+
+.card_container img{
+    max-width: 176px;
+}
+
+.card_container .product_situation{
+    font-size: 0.64em;
+    position: absolute;
+    background-color: white;
+    margin: 6px 0 0 6px;
+    padding: 2px 7px;
+    border-radius: 2px;
 }
