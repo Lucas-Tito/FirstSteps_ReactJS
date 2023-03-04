@@ -1,20 +1,19 @@
-import zaferes_pic from "../images/zaferes_pic.png"
 import rating_star from "../images/rating_star.png"
 
-export default function Card(){
+export default function Card(props){
     return(
         <div className="card_container">
-            <span className="product_situation">SOLD OUT</span>
-            <img src={zaferes_pic}/>
+            <span className="product_situation">{props.product_situation}</span>
+            <img src={require('../images/'+props.img)}/>
             <div className="description_container">
                 <div className="rating">
                     <img src={rating_star}/>
-                    <span id="score">5.0 </span>
-                    <span id="secondary_rating">(6)•USA</span>
+                    <span id="score">{props.rating} </span>
+                    <span id="secondary_rating">{props.secondary_rating}</span>
                 </div>
-                <p className="description">Life lessons with Katie Zaferes</p>
+                <p className="description">{props.description}</p>
                 <div className="pricing_container">
-                    <span className="pricing"><b>From $136/</b> person</span>
+                    <span className="pricing"><b>From {props.pricing}/</b> person</span>
                 </div>
             </div>
         </div>
