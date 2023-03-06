@@ -94,6 +94,7 @@ header .logo_container img{
 .card_container .description_container .rating #secondary_rating{
     letter-spacing: 1px;
     color: #918E9B;
+    margin-left: 3px;
 }
 
 

@@ -8,12 +8,13 @@ export default function App(){
             <Header/>
             <Hero/>
             <Card 
-                product_situation="SOLD OUT"
+                sold_out={true}
                 img="zaferes_pic.png"
                 rating="5.0"
-                secondary_rating="(6)•USA"
-                description="Life lessons with Katie Zaferes"
-                pricing="$136"
+                review_count={6}
+                country="USA"
+                title="Life lessons with Katie Zaferes"
+                pricing={136}
             />
         </>
     )
