@@ -1,11 +1,25 @@
 import rating_star from "../images/rating_star.png"
 
 export default function Card(props){
+    let badge_text
+    if(props.sold_out === true)
+        badge_text = "SOLD OUT"
+    else if(props.country === "Online")
+        badge_text = "ONLINE"
+    else
+        badge_text = "none"
+
     return(
         <div className="card_container">
-            <span className="product_situation">
-                {props.sold_out ? "SOLD OUT" : "ONLINE"}
-            </span>
+
+            {
+                // this section is rendering the img badge only if it is sold out or online
+                badge_text !== "none" ? 
+                    <span className="product_situation">
+                        {badge_text}
+                    </span>
+                    : null
+            }
 
             <img src={require('../images/'+props.img)}/>
 

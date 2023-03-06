@@ -56,10 +56,14 @@ header .logo_container img{
 
 .card_container{
     margin: 49px 0 0 37px;
+    overflow: hidden;
+    /* flex property is being used so the cards don't shrink  */
+    flex: 0 0 auto;
 }
 
 .card_container img{
     max-width: 176px;
+    border-radius: 9px;
 }
 
 .card_container .product_situation{
@@ -97,4 +101,8 @@ header .logo_container img{
     margin-left: 3px;
 }
 
+.cards_container{
+    display: flex;
+    margin-bottom: 100px;
+}
 
