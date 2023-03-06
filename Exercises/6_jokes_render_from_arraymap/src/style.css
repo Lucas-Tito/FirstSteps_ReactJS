@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#root{
+    color: white;
+    background-color: #282D35;
+    min-height: 100vh;
+}
+
+h1{
+    padding: 15px 30px;
+}
+
+h3{
+    padding: 10px 50px;
+}
