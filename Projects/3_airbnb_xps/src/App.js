@@ -10,15 +10,7 @@ export default function App(){
 
                 key={data.id}
                 //sold out attribute tells to card component if content is sold out
-                sold_out={
-                    data.openSpots == 0 ? true : false
-                }
-                img={data.coverImg}
-                rating={data.stats.rating}
-                review_count={data.stats.reviewCount}
-                country={data.location}
-                title={data.title}
-                pricing={data.price}
+                data={data}
             />
         )
     })
