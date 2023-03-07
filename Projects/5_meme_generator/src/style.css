@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+#root{
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    padding: 19px 37px;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.296875em;
+    font-weight: 700;
+}
+
+header .logo .logo_img{
+    width: 31.31px;
+    margin-right: 9px;
+}
+
+header .title{
+    font-weight: 500;
+    font-size: 0.75em;
+}
+
+.meme_form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 36px auto;
+}
+
+.meme_form .input_container{
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    margin-bottom: 15px;
+}
+
+.meme_form .input_container input{
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
+    height: 35px;
+}
+
+.meme_form button{
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.meme_container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.meme_container img{
+    max-width: 477px;
+}
