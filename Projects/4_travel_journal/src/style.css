@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+#root{
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F55A5A;
+    padding: 16px;
+    color: white;
+    font-size: 14.4608px;
+    font-weight: 500;
+}
+
+header img{
+    margin-right: 7px;
+}
+
+.cards_container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    margin-top: 45px;
+}
+
+.card_root{
+    align-self: center;
+}
+
+.card_root hr{
+    border: 1px solid #F5F5F5;
+    margin-top: 16px;
+}
+
+.card_container{
+    display: flex;
+    align-items: center;
+}
+
+.card_container .location_img{
+    height: 168px;
+    max-width: 125px;
+    object-fit: cover;
+    margin-right: 19px;
+    border-radius: 5px;
+}
+
+.card_container .location_n_maps{
+    display: flex;
+    align-items: center;
+}
+
+.card_container .location_n_maps img{
+    height: 10px;
+    margin-right: 4px;
+}
+
+.card_container .location_n_maps span{
+    font-size: 0.64em;
+    letter-spacing: 0.17em;
+    margin-right: 12px;
+    font-weight: 400;
+    color: #2B283A;
+}
+
+.card_container .location_n_maps a{
+    font-size: 0.64em;
+    text-decoration-line: underline;
+    color: #918E9B;
+}
+
+.card_container .card_description h1{
+    margin-top: 4px;
+    margin-bottom: 7px;
+    font-size: 1.5625em;
+    font-weight: 700;
+}
+
+.card_container .card_date{
+    font-weight: 700;
+    font-size: 0.64em;
+    line-height: 12.39px;
+    margin-bottom: 9px;
+}
+
+.card_container .card_text_description{
+    font-size: 0.64em;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 50ch;
+}
