@@ -4,11 +4,11 @@ export default function Counter(){
     let [counter, setCounter] = React.useState(0)
     
     function add(){
-        setCounter(++counter)
+        setCounter((prevValue) => ++prevValue)
     }
 
     function reduce(){
-        setCounter(--counter)
+        setCounter((prevValue) => --prevValue)
     }
 
     return(
