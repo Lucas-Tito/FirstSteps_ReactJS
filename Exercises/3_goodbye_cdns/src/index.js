@@ -4,7 +4,7 @@ import ReactDOM from "react-dom"
 
    const page_sample =( <div align="center">
         <h1>Hi</h1>
-        <p>From now on I stopped using CDNs, which are those import that we were using previously</p>
+        <p>From now on I stopped using CDNs, which are those imports that we were using previously</p>
         <p><h5>this method that I'm using now uses npx from node</h5></p>
     </div>)
     
