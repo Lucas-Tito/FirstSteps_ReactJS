@@ -1,7 +1,6 @@
 import {useState} from "react"
 import contact_img from "../images/user.png"
-import star_filled from "../images/star-filled.png"
-import star_empty from "../images/star-empty.png"
+import Star from "./Start"
 
 
 export default function Contact_card(){
@@ -21,17 +20,16 @@ export default function Contact_card(){
             }
         })
     }
-    
+
     return(
         <div className="contact_container">
             <img className="contact_img" src={contact_img}></img>
             <div className="contact_info">
-                <button onClick={toggleFavorite}>
-                    <img 
-                        className="contact_star" 
-                        src={contact.isFavorite ? star_filled : star_empty}>
-                    </img>
-                </button>
+                
+                <Star
+                    isFavorite = {contact.isFavorite}
+                    handleClick = {toggleFavorite}
+                />
 
                 <h2>{`${contact.firstName} ${contact.lastName}`}</h2>
                 <p>{contact.phone}</p>
