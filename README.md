@@ -1,4 +1,4 @@
-# FirstSteps_ReactJS 📖
+# Learning_ReactJS 📖
 
 <h3 align="center"> My path to learn ReactJS library </h3>
 
