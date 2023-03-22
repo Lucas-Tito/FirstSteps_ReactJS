@@ -1,3 +1,4 @@
+import Header from "./components/Header";
 import Joke from "./components/Joke";
 import jokesData from "./jokesData";
 
@@ -13,7 +14,7 @@ export default function App(){
     
     return(
         <>
-            <h1>Jokes of The Day 🃏</h1>
+            <Header/>
             {jokeElements}
         </>
     )

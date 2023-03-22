@@ -11,8 +11,36 @@
 
 h1{
     padding: 15px 30px;
+    
 }
 
 h3{
     padding: 10px 50px;
+    font-weight: lighter;
+}
+
+header{
+    background-color: rgb(27, 27, 27);
+    margin-bottom: 30px;
+}
+
+.joke{
+    display: flex;
+    align-items: center;
+}
+
+.joke button{
+    height: 30px;
+    background-color: #7A7CFF;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    filter: drop-shadow(0px 8px 10px rgba(48, 79, 254, 0.14)) drop-shadow(0px 3px 14px rgba(48, 79, 254, 0.12)) drop-shadow(0px 4px 5px rgba(48, 79, 254, 0.2));
+
+}
+
+.joke:nth-of-type(even) button {
+    background-color: #304FFE;
 }

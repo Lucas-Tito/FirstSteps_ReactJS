@@ -6,23 +6,13 @@ export default function App(){
 
     const [boxes, setBoxes] = useState(boxesData)
 
-    function toggleOn(id){
-        // code run trough current boxes array and find the box that matches the id in the parameter, thant updates it
+    function toggleOn(parameterId){
+        // code run trough current boxes array and find the box that matches the id in the parameter, then updates it
         // then that change is stored in the newBoxes array
         setBoxes((prevBoxes) => {
-            let newBoxes = []
-
-            prevBoxes.forEach(box => {
-                if(box.id === id)
-                    newBoxes.push({
-                        ...box,
-                        on:!box.on
-                    })
-                else
-                    newBoxes.push(box)
+            return prevBoxes.map((currentBox) => {
+                return currentBox.id === parameterId ? {...currentBox, on: !currentBox.on} : currentBox
             })
-
-            return newBoxes
         })
     }
 
