@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    height: 100vh;
+    display: flex;
+    background-color: blueviolet;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 10px;
+}
+
