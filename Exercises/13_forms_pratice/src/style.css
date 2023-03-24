@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    height: 100vh;
+    display: flex;
+    background-color: blueviolet;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+    margin: auto auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+form input{
+    padding: 8px;
+}
+
+form button{
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+}
