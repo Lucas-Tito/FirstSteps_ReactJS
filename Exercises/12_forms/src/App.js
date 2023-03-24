@@ -37,32 +37,35 @@ export default function App(){
         <>
             <form onSubmit={handleSubmit}>
                 {/* each input receives a value property so it can be a controlled input (input value is driven by react) */}
-                <input 
-                    name="firstName"
-                    type="text" 
-                    placeholder="First Name" 
-                    onChange={handleChange}
-                    value={formData.firstName}
-                >
-                </input>
+                <div className="text_area">
+                    <input 
+                        name="firstName"
+                        type="text" 
+                        placeholder="First Name" 
+                        onChange={handleChange}
+                        value={formData.firstName}
+                    >
+                    </input>
 
-                <input 
-                    name="lastName"
-                    type="text" 
-                    placeholder="Last Name" 
-                    onChange={handleChange}
-                    value={formData.lastName}
-                >
-                </input>
+                    <input 
+                        name="lastName"
+                        type="text" 
+                        placeholder="Last Name" 
+                        onChange={handleChange}
+                        value={formData.lastName}
+                    >
+                    </input>
 
-                <input 
-                    name="email"
-                    type="email" 
-                    placeholder="Email" 
-                    onChange={handleChange}
-                    value={formData.email}
-                >
-                </input>
+                    <input 
+                        name="email"
+                        type="email" 
+                        placeholder="Email" 
+                        onChange={handleChange}
+                        value={formData.email}
+                    >
+                    </input>
+                </div>
+
 
                 <textarea 
                     value={formData.comments}
@@ -71,39 +74,44 @@ export default function App(){
                     name="comments"
                 />
 
-                <input 
-                    type="checkbox" 
-                    name="isRobot"
-                    id="isRobot" 
-                    checked={formData.isRobot} 
-                    onChange={handleChange}
-                />
-                <label htmlFor="isRobot">Are you a Robot?</label>
-
+                <div className="checkbox">
+                    <input 
+                        type="checkbox" 
+                        name="isRobot"
+                        id="isRobot" 
+                        checked={formData.isRobot} 
+                        onChange={handleChange}
+                    />
+                    <label htmlFor="isRobot">Are you a Robot?</label>
+                </div>
+                
 
                 <fieldset>
                     <legend>Current employment status</legend>
 
-                    <input
-                        type="radio"
-                        id="unemployed"
-                        name="employment"
-                        value="unemployed"
-                        onChange={handleChange}
-                        checked={formData.employment === "unemployed"}
-                    />
-                    <label htmlFor="unemployed">Unemployed</label>
+                    <div className="radio">
+                        <input
+                            type="radio"
+                            id="unemployed"
+                            name="employment"
+                            value="unemployed"
+                            onChange={handleChange}
+                            checked={formData.employment === "unemployed"}
+                        />
+                        <label htmlFor="unemployed">Unemployed</label>
+                    </div>
 
-                    <input
-                        type="radio"
-                        id="employed"
-                        name="employment"
-                        value="employed"
-                        onChange={handleChange}
-                        checked={formData.employment === "employed"}
-                    />
-                    <label htmlFor="unemployed">Employed</label>
-
+                    <div className="radio">
+                        <input
+                            type="radio"
+                            id="employed"
+                            name="employment"
+                            value="employed"
+                            onChange={handleChange}
+                            checked={formData.employment === "employed"}
+                        />
+                        <label htmlFor="unemployed">Employed</label>
+                    </div>
                 </fieldset>
 
 

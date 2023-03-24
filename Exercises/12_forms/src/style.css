@@ -19,3 +19,15 @@ form{
     gap: 10px;
 }
 
+form .text_area{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form .text_area > *{
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    padding: 10px;
+}
