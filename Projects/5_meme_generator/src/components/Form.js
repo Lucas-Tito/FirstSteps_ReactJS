@@ -1,11 +1,22 @@
-import MemeGenerator from "../utils/MemeGenerator"
+import MemeGenerator from "../utils/RandomNumber"
 import meme_placeholder from "../images/meme_placeholder.png"
 import React from "react"
 import memeData from "../memeData"
+import RandomNumber from "../utils/RandomNumber"
 
 export default function Form(){
 
-    const [allMemeImages, setMemeImages] = React.useState(memeData)
+    React.useEffect(() => {
+        //fetch does a request from the api asynchronously
+        fetch("https://api.imgflip.com/get_memes")
+            //here we transform the response in json (which is asynchronously too)
+            .then(res => res.json())
+            //here we start to manage the data from the request
+            .then(data => setAllMemes(data.data.memes))
+    }, [])
+
+
+    const [allMemes, setAllMemes] = React.useState(memeData)
 
     const [meme, setRandomMeme] = React.useState({
         topText: "",
@@ -25,11 +36,10 @@ export default function Form(){
     }
     
     function handleClick(){
-        let memeGenerator = new MemeGenerator()
-
+        
         setRandomMeme(prevMeme => ({
             ...prevMeme,
-            randomImage: memeGenerator.getRandomMeme_img()
+            randomImage: allMemes[RandomNumber()].url
         }))
     }
 
