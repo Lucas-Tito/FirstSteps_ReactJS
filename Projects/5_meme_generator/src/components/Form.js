@@ -12,6 +12,17 @@ export default function Form(){
         bottomText: "",
         randomImage: meme_placeholder
     })
+
+    function handleChange(event){
+        const {name, value} = event.target
+
+        setRandomMeme((prevState) => {
+            return {
+                ...prevState,
+                [name]: value
+            }
+        })
+    }
     
     function handleClick(){
         let memeGenerator = new MemeGenerator()
@@ -26,12 +37,26 @@ export default function Form(){
         <>
             <div className="meme_form">
                 <div className="input_container">
-                    <input placeholder="Top text"></input>
-                    <input placeholder="Bottom text"></input>
+                    <input 
+                        name="topText"
+                        value={meme.topText}
+                        placeholder="Top text"
+                        onChange={handleChange}>
+                    </input>
+
+                    <input 
+                        name="bottomText"
+                        value={meme.bottomText}
+                        placeholder="Bottom text"
+                        onChange={handleChange}>
+                    </input>
+
                 </div>
                 <button onClick={handleClick}>Get a new meme image 🖼️</button>
             </div>
             <div className="meme_container">
+                <h1 className="top_text">{meme.topText}</h1>
+                <h1 className="bottom_text">{meme.bottomText}</h1>
                 <img src={meme.randomImage}/>
             </div>
         </>

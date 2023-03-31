@@ -71,10 +71,25 @@ header .title{
 }
 
 .meme_container{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
+
+    color: white;
+    text-shadow: 3px 3px black;
+               
+}
+
+.meme_container .top_text{
+    position: absolute;
+    top: 0;
+}
+
+.meme_container .bottom_text{
+    position: absolute;
+    bottom: 0;
 }
 
 .meme_container img{

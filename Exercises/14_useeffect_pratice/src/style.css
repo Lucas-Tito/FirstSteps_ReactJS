@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    height: 100vh;
+    background-color: #222222;
+    color: white;
+    padding-left: 30px;
+}
+
+.counter{
+    padding-top: 50px;
+    font-size: 2em;
+}

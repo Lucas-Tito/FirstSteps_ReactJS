@@ -31,4 +31,5 @@ form button{
     padding: 8px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }

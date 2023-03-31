@@ -64,7 +64,7 @@ export default function Form(){
                 <input
                     id="joinNews"
                     type="checkbox"
-                    name="joinNews"
+                    name="joinedNews"
                     checked={formData.joinedNews}
                     onChange={handleChange}
                 />
