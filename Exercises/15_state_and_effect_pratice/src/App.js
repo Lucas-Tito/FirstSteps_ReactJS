@@ -1,5 +1,14 @@
+import { useState } from "react"
+import WindowTracker from "./components/WindowTracker"
+
 export default function App(){
+
+    const [show, setShow] = useState(true)
+
     return(
-        <h1>Hello World</h1>
+        <>
+            <button>Toggle WindowTracker</button>
+            {show && <WindowTracker/>} 
+        </>
     )
 }
