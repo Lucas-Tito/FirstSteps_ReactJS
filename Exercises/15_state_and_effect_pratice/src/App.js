@@ -5,9 +5,13 @@ export default function App(){
 
     const [show, setShow] = useState(true)
 
+    function toggle(){
+        setShow((prevState) => !prevState)
+    }
+
     return(
         <>
-            <button>Toggle WindowTracker</button>
+            <button onClick={toggle}>Toggle WindowTracker</button>
             {show && <WindowTracker/>} 
         </>
     )
