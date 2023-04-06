@@ -1,8 +1,11 @@
-import React from "react"
+import { useContext } from "react"
+import ThemeContext from "./ThemeContext"
 
 export default function Main(props) {
+
+    let dark_mode = useContext(ThemeContext)
     return (
-        <main className={props.darkMode ? "dark" : ""}>
+        <main className={dark_mode ? "dark" : ""}>
             <h1 className="main--title">Fun facts about React</h1>
             <ul className="main--facts">
                 <li>Was first released in 2013</li>

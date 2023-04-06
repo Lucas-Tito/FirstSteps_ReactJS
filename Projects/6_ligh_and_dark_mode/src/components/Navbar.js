@@ -1,18 +1,32 @@
-import React from "react"
+import { useContext } from "react"
+import react_icon_small from "../images/react-icon-small.png"
+import ThemeContext from "./ThemeContext"
 
 export default function Navbar(props) {
+
+    function handleThemes(){
+        props.changeThemeHandler((prevState)=>{
+            let mode
+            prevState === false? mode = true: mode = false
+            return mode
+        })
+    }
+
+    let dark_mode = useContext(ThemeContext)
+    
     return (
          <nav 
-            className={props.darkMode ? "dark": ""}
-        >
+            className={dark_mode ? "dark": ""}
+            >
             <img 
                 className="nav--logo_icon"
-                src="./images/react-icon-small.png"
+                src={react_icon_small}
             />
             <h3 className="nav--logo_text">ReactFacts</h3>
             
             <div 
                 className="toggler" 
+                onClick={handleThemes}
             >
                 <p className="toggler--light">Light</p>
                 <div 
