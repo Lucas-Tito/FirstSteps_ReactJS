@@ -1,7 +1,8 @@
-# Props
+## Props 💡
 Props são uma maneira de passar dados de um componente pai para um componente filho. 
+<br><br><br>
 
-## How to
+### How to 📖
 Para utilizar os props, é necessário que você forneça no componente pai os dados para o componente filho.
 
 <p align="center">
