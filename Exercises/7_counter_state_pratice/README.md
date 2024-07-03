@@ -12,5 +12,5 @@ O elemento a seguir é um contador:
 <br>
 <p>Perceba que <strong>counter</strong> é a nossa varíavel de estado, enquanto <strong>setCounter</strong> é a função usada para manipular essa variável; o useState sempre recebe esse par.</p>
 
-<p>Perceba que <strong>counter</strong> é a nossa varíavel de estado, enquanto <strong>setCounter</strong> é a função usada para manipular essa variável; o useState sempre recebe esse par.</p>
+<p>Além disso, é possível notar que o nosso elemento consiste basicamente do display da variável <strong>counter</strong> acompanhado de dois botões que manipulam a função <strong>setCounter</strong>.</p>
 
