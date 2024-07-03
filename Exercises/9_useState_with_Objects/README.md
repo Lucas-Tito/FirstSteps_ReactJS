@@ -10,4 +10,10 @@ A maneira de operar useStates contendo objeto é similar à do array; observe o 
 </p>
 
 <br>
-<p>Perceba que <strong>antes de adicionar um novo item</strong>, todos os elementos anteriores são fornecidos novamente. Isso acontece por conta da natureza do useState, se apenas o item atual fosse fornecido, o estado de items iria passar a ser uma variável simples apenas com o item novo.</p>
+
+<h3 align="center">O Elemento</h3>
+
+<p>Perceba que o nosso elemento alimento por um objeto composto de diferentes dados. Entretanto, a única funcionalidade implementada é a de adicionar o contato como favorito.</p>
+
+<h3 align="center">Funcionamento</h3>
+<p>Ao clicar na estrela do elemento, a função toggleFavorite é chamada. É possível perceber que assim como no exemplo do array, é necessário fornecer todos os dados do objeto que não precisam ser modificados e modificar somente o atributo isFavorite.</p>
