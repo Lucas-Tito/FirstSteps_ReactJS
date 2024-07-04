@@ -1,8 +1,7 @@
 ## useEffect 💡
-ChatGPT
 
 O <strong>useEffect</strong> permite executar efeitos colaterais em componentes,como buscar dados de uma API.
-<br><br><br>
+<br><br>
 
 ### How To 📖
 O useEffect recebe uma função e um array de dependência como argumento. A cada mudança em alguma das dependências a função dentro do useEffect será chamada. No caso do array de dependência estar vazio, a função será executada uma única vez.
