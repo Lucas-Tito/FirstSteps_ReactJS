@@ -68,7 +68,7 @@ Link é um componente que funciona de maneira similar ao "a" no html; como propr
 
 <br><br>
 <h3 align="center">useNavigate</h3>
-Também é possível realizar o redirecionamento na parte da lógico, para isso é preciso importar o useNavigate e usá-lo da seguinte maneira:
+Também é possível realizar o redirecionamento na parte da lógica, para isso é preciso importar o useNavigate e usá-lo da seguinte maneira:
 <p align="center">
   <img src="https://github.com/Lucas-Tito/Learning_ReactJS/assets/61806906/9ac193e5-a732-487f-9367-2dfbbc870570" alt="img" width="35%"/>
 </p>
@@ -77,7 +77,7 @@ Também é possível realizar o redirecionamento na parte da lógico, para isso 
 ## Extras
 
 <h3 align="center">Página de Erro</h3>
-Com o react router também é possível criar uma página de erro, para tal crie um componente dentro de routes. No objeto principal você passa outra propriedade chamada errorElement. Essa implementação simples, funciona como uma página de error 404, mas existem mais aplicações para essa página de erro.
+Com o react router também é possível criar uma página de erro, para tal crie um componente dentro de routes. No objeto principal você passa outra propriedade chamada errorElement. Essa implementação simples funciona como uma página de error 404, mas existem mais aplicações para essa página de erro.
 
 <p align="center">
   <img src="https://github.com/Lucas-Tito/Learning_ReactJS/assets/61806906/cb1332e7-f5e7-418f-9c7e-5337b95510fa" alt="img" width="35%"/>
