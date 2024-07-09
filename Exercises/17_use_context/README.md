@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+## useContext 💡
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<strong>useContext</strong> é usado para compartilhar valores entre componentes sem precisar passar explicitamente props através de cada nível da árvore de componentes. Ele funciona através de um contexto, que representa os dados a serem compartilhados e um provedor que irá envolver os componentes que poderão acessar esses dados.
+<br><br><br>
 
-## Available Scripts
+### How To 📖
 
-In the project directory, you can run:
+<br>
+Para configurar o useContext, você deve criar uma pasta context na raiz do projeto e dentro dela o arquivo com o nome do contexto seguido de Context (no nosso caso o contexto é o tema do site).
 
-### `npm start`
+<br><br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Além disso, dentro desse arquivo é necessário importar as funções createContext e useState, bem como exportar o contexto como uma invocação da função createContext; outra exportação necessária é o provider desse contexto.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
+<p align="center">
+  <img src="https://github.com/Lucas-Tito/Learning_ReactJS/assets/61806906/e2e4edfe-2ebb-48ea-9e31-bf5e19871a24" alt="img" width="50%"/>
+</p>
 
-### `npm test`
+Esse provider irá receber uma função com a propriedade children (componentes filhos que usarão o contexto) que retorna um jsx que utiliza o componente provider do nosso contexto. Ademais, a propriedade children estará dentro desse componente.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
 
-### `npm run build`
+Por fim, é necessário um valor para ser manipulado e consultado no contexto, para tal é necessário criar um estado e uma função que modifique esse estado, os quais serão passados na propriedade value do provider.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br><br>
+<h3 align="center">Configurando Provider</h3>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center">É necessário importar o provider na página principal (que contém ReactDOM.createRoot().render()) e envolver a aplicação no provider.</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center">
+  <img src="https://github.com/Lucas-Tito/Learning_ReactJS/assets/61806906/131cabbf-5a25-4f52-806a-b730e47ca8a9" alt="img" width="45%"/>
 
-### `npm run eject`
+<br><br>
+<h3 align="center">Consulta e Modificação do Context</h3>
+<p align="center">Para modificar e consultar os valores do contexto você precisa importar a função use context e também o contexto. Além disso, você deve iniciar variáveis com o estado e a função passadas na propriedade value do provider com a função useContext, que recebe o contexto como argumento; a partir daí é só utilizar essas varíaveis para realizar a consulta e a mudança dos valores do context.</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+  <img src="https://github.com/Lucas-Tito/Learning_ReactJS/assets/61806906/f5a1cd3b-9f18-4075-a4d1-558a8d91dd83" alt="img" width="45%"/>
+</p>
